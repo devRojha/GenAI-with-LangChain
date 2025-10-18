@@ -15,7 +15,7 @@ llm = HuggingFacePipeline.from_model_id(
     huggingfacehub_api_token=hf_token
 )
 
-model = chatHuggingFace(llm=llm)
+model = ChatHuggingFace(llm=llm)
 
 result = model.invoke("Explain the theory of relativity in simple terms.")
 
