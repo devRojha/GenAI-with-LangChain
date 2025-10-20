@@ -10,9 +10,9 @@ chat_template = ChatPromptTemplate([
 ])
 
 chat_history = []
-# load chat history
 
-with open('/prompts/chat_history.txt') as f :
+# load chat history => fetch from data base (current from txt file)
+with open('chat_history.txt') as f :
     chat_history.extend(f.readlines)
 
 print(chat_history)
